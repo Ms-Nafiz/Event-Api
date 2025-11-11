@@ -40,4 +40,8 @@ return [
 
     'supports_credentials' => true,
 
+    'secure' => env('SESSION_SECURE_COOKIE', true),
+    
+    'same_site' => 'none',
+
 ];
