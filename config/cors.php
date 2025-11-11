@@ -27,8 +27,7 @@ return [
 
     'allowed_origins' => [
         'https://horkoraevent.netlify.app',
-        'http://localhost:5173',
-        'https://9e70b338cfb7.ngrok-free.app',
+        'http://localhost:5173'
     ],
 
     'allowed_origins_patterns' => [],
