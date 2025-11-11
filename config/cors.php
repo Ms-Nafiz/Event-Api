@@ -26,8 +26,7 @@ return [
     'allowed_methods' => ['*'],
 
     'allowed_origins' => [
-        'https://horkoraevent.netlify.app',
-        'http://localhost:5173'
+        'https://horkoraevent.netlify.app'
     ],
 
     'allowed_origins_patterns' => [],
