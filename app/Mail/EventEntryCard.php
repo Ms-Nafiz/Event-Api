@@ -65,7 +65,7 @@ class EventEntryCard extends Mailable
             'margin_right' => 10,
         ]);
         $pdfOutput = $mpdf->WriteHTML($html);
-        $pdfContent = $mpdf->Output('', 'S'); // PDF as string
+        $pdfContent = $mpdf->Output('', 'I'); // PDF as string
 
         // ইমেইলে অ্যাটাচ করা
         return [

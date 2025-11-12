@@ -120,7 +120,7 @@ class EventRegistrationController extends Controller
     $fileName = "Entry-Card-{$registration->registration_id}.pdf";
 
     // ব্রাউজারে ডাউনলোড করাও
-    return response($mpdf->Output($fileName, 'S'))
+    return response($mpdf->Output($fileName, 'I'))
         ->header('Content-Type', 'application/pdf')
         ->header('Content-Disposition', "attachment; filename=\"$fileName\"");
 }
