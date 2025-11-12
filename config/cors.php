@@ -27,7 +27,9 @@ return [
 
     'allowed_origins' => [
         'https://horkoraevent.netlify.app',
-        'https://event.cclcatv.com'
+        'https://event.cclcatv.com',
+        'http://localhost:5173',
+        'http://localhost:8000'
     ],
 
     'allowed_origins_patterns' => [],
