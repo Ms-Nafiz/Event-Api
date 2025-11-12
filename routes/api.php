@@ -8,17 +8,6 @@ use App\Http\Controllers\Api\EventRegistrationController;
 
 
 
-// public routes
-Route::get('/groups', [GroupController::class, 'index']);
-
-Route::post('/register-event', [EventRegistrationController::class, 'store']);
-
-Route::get('/registration/download/{id}', [EventRegistrationController::class, 'downloadEntryCard'])
-    ->name('registration.download');
-
-Route::middleware(['auth:sanctum'])->get('/user', function (Request $request) {
-    return $request->user();
-});
 
 Route::middleware('auth:sanctum')->group(function () {
 
@@ -50,3 +39,15 @@ Route::middleware('auth:sanctum')->group(function () {
     // (ভবিষ্যতের জন্য: যদি কোনো নির্দিষ্ট রেজিস্ট্রেশনের বিস্তারিত দেখতে চান)
     // Route::get('/registration/{id}', [EventRegistrationController::class, 'show']);
 });
+
+// public routes
+Route::get('/groups', [GroupController::class, 'index']);
+
+Route::post('/register-event', [EventRegistrationController::class, 'store']);
+
+Route::get('/registration/download/{id}', [EventRegistrationController::class, 'downloadEntryCard'])
+    ->name('registration.download');
+
+// Route::middleware(['auth:sanctum'])->get('/user', function (Request $request) {
+//     return $request->user();
+// });
