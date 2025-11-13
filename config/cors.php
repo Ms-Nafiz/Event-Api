@@ -28,7 +28,7 @@ return [
     'allowed_origins' => [
         'https://horkoraevent.netlify.app',
         'https://event.cclcatv.com',
-        'https://event-registration-wheat-sigma.vercel.app/',
+        'https://event-registration-wheat-sigma.vercel.app',
         'http://localhost:5173',
         'http://localhost:8000'
     ],
